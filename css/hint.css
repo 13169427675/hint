@@ -1,0 +1,177 @@
+/*公共样式*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    letter-spacing: 4px;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.MASK {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #777;
+}
+
+@keyframes opacity_out {
+    form {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+/* 信息确认框样式 */
+.MASK .HINT,
+.MASK .HINT_1 {
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    border-radius: 8px;
+    background-color: #666;
+}
+
+.MASK .HINT,
+.MASK .HINT_3 {
+    width: 500px;
+    height: 300px;
+    margin: -200px 0px 0px -250px;
+}
+
+.MASK .HINT .TITLE {
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+
+.MASK .HINT .TITLE .FONT {
+    position: absolute;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    color: pink;
+    top: 0px;
+    left: 0px;
+    z-index: 7;
+}
+
+.MASK .HINT .TITLE .CLOSE {
+    position: absolute;
+    width: 38px;
+    line-height: 38px;
+    text-align: center;
+    right: 0;
+    top: 0;
+    color: red;
+    z-index: 8;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+.MASK .HINT .TITLE .CLOSE:hover {
+    border: 1px solid red;
+    transform: rotate(360deg);
+}
+
+.MASK .HINT .CONTENT {
+    width: 100%;
+    height: 200px;
+    padding-top: 10px;
+    text-indent: 28px;
+    background-color: #888;
+
+}
+
+.MASK .HINT .FOOTER {
+    width: 100%;
+    height: 50px;
+    background-color: #555;
+    padding-top: 4px;
+}
+
+.MASK .HINT .FOOTER .BT,
+.MASK .HINT .FOOTER .BTS {
+    display: block;
+    width: 90px;
+    margin: 0px auto;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: whitesmoke;
+}
+
+/*信息提示框样式*/
+.MASK .HINT_1 {
+    width: 180px;
+    background-color: red;
+    margin: -50px 0px 0px -90px;
+    text-align: center;
+}
+
+/*选择框样式*/
+.MASK .HINT .FOOTER .BOX {
+    width: 250PX;
+    height: 100%;
+    margin: 0PX auto;
+    background-color: pink;
+}
+
+.MASK .HINT .FOOTER .BTS {
+    display: inline-block;
+}
+
+.MASK .HINT .FOOTER .BTS:nth-child(1) {
+    margin-right: 70px;
+}
+
+/*链接框样式*/
+.MASK .HINT .CONTENTS {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.MASK .HINT .CONTENTS .SKIP {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.MASK .HINT .CONTENTS .SKIP a {
+    display: inline-block;
+    line-height: 40px;
+    width: 100%;
+}
+
+.MASK .HINT .CONTENTS .CLOSE {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    color: #999;
+    font-size: 14px;
+    border: 1px solid #999;
+    cursor: pointer;
+}
